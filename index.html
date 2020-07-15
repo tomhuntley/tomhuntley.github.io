@@ -2,42 +2,22 @@
 <!DOCTYPE html>
 
 <head>
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <meta name="author" content="Simon Miles (@geosmiles)">
-
   <link rel="shortcut icon" type="image/x-icon" href="https://www.surreyheath.gov.uk/sites/default/files/images/favicon.ico">
-
-  <link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
-  <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-
-  <script>
-    var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-    // Chrome has Safari in the user agent so we need to filter (https://stackoverflow.com/a/7768006/1502448)
-    var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
-    if ((is_chrome) && (is_safari)) {is_safari = false;}
-    if (is_safari) {
-      // See if cookie exists (https://stackoverflow.com/a/25617724/1502448)
-      if (!document.cookie.match(/^(.*;)?\s*gx-pmv-tk\s*=\s*[^;]+(.*)?$/)) {
-        // Set cookie to maximum (https://stackoverflow.com/a/33106316/1502448)
-        document.cookie = 'gx-pmv-tk=entry; expires=Tue, 19 Jan 2038 03:14:07 UTC; path=/';
-        //window.location.replace("https://vit-demos.appspot.com/_safari_fix.html");
-      }
-    }
-  </script>
-
+  <script src="https://beta-shared.xmap.cloud/js/app.js"></script>
+  <link href="https://beta-shared.xmap.cloud/css/app.css" rel="stylesheet">
 </head>
 
-<style>iframe{display:block;background:#000;border:none;height:calc(80vh);width:100%}.xmap{height:80vh;display:block}.footer{height:20vh;display:block;background-color:#32aa39!important;border-color:#32aa39!important;border-top:5px solid #333!important;color:#fff;text-align:center}.page{height:100vh;height: calc(var(--vh, 1vh) * 100);margin:0 auto}</style>
+<style>iframe{display:block;background:#000;border:none;height:calc(80vh);width:100%}.xmap{height:80vh;display:block}.footer{height:20vh;display:block;background-color: #aa329a !important;border-color:#32aa39!important;border-top:5px solid #333!important;color:#fff;text-align:center}  .page{height:100vh;height: calc(var(--vh, 1vh) * 100);margin:0 auto}</style>
 
 <body>
 <div class="page">
   <div class="xmap">
     <!--Add in the URL only into the iframe-->
-    <iframe src='https://shared.xmap.cloud/?map=faef1dfa-3805-4ca5-9e11-a7fc14b35a29' style="border:0px #ffffff none;" name="gx_iframe" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen></iframe>
+    <vue-widget mapid="8e56b2ce-effb-4ac6-8898-04617c2d211b"></vue-widget>
     <!-- remove any height element-->
   </div>
   <div class="footer">
