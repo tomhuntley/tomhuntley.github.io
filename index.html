@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <head>
@@ -6,21 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <meta name="author" content="Simon Miles (@geosmiles)">
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.surreyheath.gov.uk/sites/default/files/images/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon"
+        href="https://www.surreyheath.gov.uk/sites/default/files/images/favicon.ico">
   <script src="https://beta-shared.xmap.cloud/js/app.js"></script>
   <link href="https://beta-shared.xmap.cloud/css/app.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    }
+  </style>
 </head>
 
-<style>iframe{display:block;background:#000;border:none;height:calc(80vh);width:100%}.xmap{height:80vh;display:block}.footer{height:20vh;display:block;background-color: #aa329a !important;border-color:#32aa39!important;border-top:5px solid #333!important;color:#fff;text-align:center}  .page{height:100vh;height: calc(var(--vh, 1vh) * 100);margin:0 auto}</style>
+<style>
+
+  .xmap {
+    height: 80vh;
+  }
+
+  .footer {
+    height: 20vh;
+    display: block;
+    background-color: #32aa39 !important;
+    border-color: #32aa39 !important;
+    border-top: 5px solid #333 !important;
+    color: #fff;
+    text-align: center
+  }
+
+  .page {
+    height: 100vh;
+    margin: 0 auto
+  }</style>
 
 <body>
 <div class="page">
   <div class="xmap">
-    <!--Add in the URL only into the iframe-->
     <xmap-embed mapid="faef1dfa-3805-4ca5-9e11-a7fc14b35a29"></xmap-embed>
-    <!-- remove any height element-->
   </div>
-  <div class="footer">
+  <div class="footer" style="z-index: 190;">
     Surrey Heath Borough Council
   </div>
 </div>
