@@ -3,7 +3,7 @@
 
 <ul>
 <li>
-<a href="/shbc.html">SHBC</a>
+<a href="/embed.html">Embed</a>
 </li>
 </ul>
 
