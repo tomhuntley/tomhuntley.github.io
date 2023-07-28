@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script
+      type="module"
+      src="https://d2mwc1u52jw5o5.cloudfront.net/assets/index-5a709769.js"
+  ></script>
+</head>
+<body>
+<xmap-app>
+  <xmap-web-map
+      width="500"
+      height="500"
+      zoom="10"
+      x="-167326.973549"
+      y="6780270.157008"
+      z="10"
+  >
+    <xmap-web-layer-wms
+        url="https://data.xmap.cloud/api/cf1958d6-832b-4f63-8ea6-d0a1dd7f8777/wms"
+        layer="os-psma:os-opendata-stack-standard"
+    ></xmap-web-layer-wms>
+    <xmap-web-layer-wms
+        url="https://gxdatauk.maps.xmap.cloud/wms"
+        layer="gx_data_uk_public:parish_region"
+    ></xmap-web-layer-wms>
+  </xmap-web-map>
+</xmap-app>
+</body>
+</html>
