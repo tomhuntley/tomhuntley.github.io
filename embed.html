@@ -4,20 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   <script
-      src="https://embed.toms-sandbox.xmap.cloud/embed.mjs"
+      src="https://embed.xmap.cloud/embed.mjs"
   ></script>
 </head>
 <body>
 <div style="width: 550px; height: 450px">
-  <xmap-app>
-    <xmap-web-map
-        zoom="10"
-        extent="420000,160000,425000,165000"
-    >
-      <xmap-web-layer-wms
-          url="https://gxdatauk.maps.xmap.cloud/wms"
-          layer="gx_data_uk_public:parish_region"
-      ></xmap-web-layer-wms>
+  <xmap-app variant="parishonline" primary-color="#01573c">
+    <xmap-web-map width="564" height="564" extent="415929,237709,426397,248364">
+      <xmap-web-layer-wms url="https://data.xmap.cloud/api/cf1958d6-832b-4f63-8ea6-d0a1dd7f8777/wms" layer="os-psma:os-opendata-stack-standard"></xmap-web-layer-wms>
+      <xmap-web-layer-wms url="https://gxdatauk.maps.xmap.cloud/wms" layer="gx_data_uk_public:parish_region"></xmap-web-layer-wms>
     </xmap-web-map>
   </xmap-app>
 </div>
